@@ -10,7 +10,7 @@ This is a solution to the modern javascript course by Juan Pablo De la torre Val
 
 ## Live Demo
 
-[Live Demo](https://rmrmrmr.github.io/JavaScript-Capstone/dist/)
+[Live Demo](https://vvoo21.github.io/shop-cart/dist/)
 
 ### Screenshot
 
@@ -25,7 +25,7 @@ To get a local copy up and running follow these simple example steps.
 - Install nodeJS along with NPM
 
 ### Setup
-- Clone this repository into your local environment with `git clone git@github.com:rmrmrmr/JavaScript-Capstone.git`
+- Clone this repository into your local environment with `git clone https://github.com/vvoo21/shop-cart.git`
 
 ### Install
 - Just run `npm i` on the root of the project and you're good to go. All of the necesary packages will be installed for you!
