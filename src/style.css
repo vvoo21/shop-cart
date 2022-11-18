@@ -31,7 +31,6 @@ header {
   width: 100%;
   display: flex;
   padding: 1.5em;
-  border: solid;
 }
 
 .navbar {
@@ -54,10 +53,13 @@ header {
   color: var(--dark-brown);
 }
 
+.shop-bag-icon {
+  cursor: pointer;
+}
+
 section {
-  border: solid;
   width: 100%;
-  padding: 1.2em 1em;
+  padding: 1.5em 1em;
 }
 
 /* Home section */
@@ -92,6 +94,8 @@ section {
   letter-spacing: 0.1em;
 }
 
+/* form */
+
 #form {
   background-color: var(--white);
   border-radius: 16px;
@@ -99,20 +103,22 @@ section {
   align-items: center;
   padding: 0.5em;
   width: 100%;
-
-  /* max-width: 440px; */
 }
 
 #form input {
   border: none;
   outline: none;
   background: none;
-  cursor: initial;
+  transition: 0.2s ease-in-out;
 }
 
 .form-search {
   width: 95%;
   padding: 0.8em;
+}
+
+.form-submit {
+  cursor: pointer;
 }
 
 /* Products section */
@@ -125,6 +131,11 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 1em;
+}
+
+.products-container h2 {
+  margin-bottom: 0.8em;
 }
 
 .products-row {
@@ -132,7 +143,7 @@ section {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  gap: 0.5em;
+  gap: 0.8em;
 }
 
 .product-card {
@@ -210,8 +221,8 @@ section {
   border: 1px solid var(--pink);
   border-radius: 8px;
   background-color: var(--pink);
-  color: var(--light);
-  font-size: 1.1em;
+  color: var(--white);
+  font-size: 1.2em;
   font-weight: 700;
   margin: 1em;
   cursor: pointer;
@@ -226,7 +237,6 @@ section {
 /* footer */
 footer {
   width: 100%;
-  border: solid;
   background-color: var(--dark-brown);
   padding: 2em;
 }
@@ -261,7 +271,7 @@ footer {
 
 .modal-navbar-bg {
   position: fixed;
-  display: flex;
+  display: none;
   left: 0;
   top: 0;
   bottom: 0;
@@ -289,4 +299,8 @@ footer {
   color: var(--light);
   font-weight: 700;
   font-size: 1.2rem;
+}
+
+@media screen and (min-width: 768px) {
+  
 }
