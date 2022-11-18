@@ -14,7 +14,7 @@ This is a solution to the modern javascript course by Juan Pablo De la torre Val
 
 ### Screenshot
 
-![Desktop Version](./src/images/hi.png)
+![Mobile Version](./src/images/mobile-version.png)
 
 ## Getting Started
 
