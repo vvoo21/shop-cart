@@ -4,10 +4,164 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Webpack boilerplate</title>
+    <title>Coffee & cheers</title>
 </head>
 <body>
-  <h1>Hello webpack!</h1>
-  <img src="images/hi.png" alt="sync icon" width="40" height="40">
+  <header>
+    <nav class="navbar">
+      <a href="#" class="navbar-iconMenu">
+        <img src="/src/images/hamburger.png" alt="Hamburger icon" width="30" height="30">
+      </a>
+      <div class="navbar-logo">
+        <img src="/src/images/coffee-beans.png" alt="logo coffee & cheers" width="15" height="15">
+        <h1 class="navbar-logo-text">Coffee & Cheers</h1>
+      </div>
+      <img src="/src/images/shop-bag.png" alt="shop-bag icon" width="28" height="28">
+
+      <!-- Start modal navbar -->
+    <div class="modal-navbar-bg">
+      <nav class="modal-navbar">
+        <img class="modal-navbar-close" src="./images/icon-close-white.svg" alt="close icon">
+        <ul class="modal-navbar-items">
+          <li><a class="modal-navbar-link" href="#">Home</a></li>
+          <li><a class="modal-navbar-link" href="#">Products</a></li>
+          <li><a class="modal-navbar-link" href="#">About</a></li>
+          <li><a class="modal-navbar-link" href="#">Contact</a></li>
+        </ul>
+      </nav>        
+    </div>
+    <!-- End modal navbar -->
+
+      <!-- <ul class="navbar__menu">
+        <li class="navbar__item">
+          <a href="#home" class="navbar__link">Home</a>
+        </li>
+        <li class="navbar__item">
+          <a href="#about" class="navbar__link">About</a>
+        </li>
+        <li class="navbar__item">
+          <a href="#products" class="navbar__link">Products</a>
+        </li>
+        <li class="navbar__item">
+          <a href="#contact" class="navbar__link">Contact</a>
+        </li>
+      </ul> -->
+    </nav>
+  </header>
+  <main>
+    <section class="home1">
+      <div class="home1-container">
+        <video autoplay loop class="home1-video" src="/src/images/Coffee-video.mp4" type="video/mp4"></video>
+        <div class="home1-content">
+          <h2 class="primary-text">Buy the best quality coffee</h2>
+          <p class="secundary-text">Each coffee is $10</p>
+          <form action="#" id="form" method="post">
+            <input type="text" name="search" class="form-search" placeholder="Search" aria-label="search" required>
+            <input class="form-submit" type="image" src="/src/images/search.png" alt="Submit" width="20" height="20">
+          </form>
+        </div>
+      </div>
+    </section>
+    <section class="products">
+      <div class="products-container">
+        <h2 class="primary-text">Products</h2>
+        <div class="products-row">
+          <div class="product-card">
+            <img class="product-img" src="/src/images/Premium-aromatic-coffee.jpg" alt="Image by mego-studio on Freepik" width="300" height="200">
+            <div class="product-card-info">
+              <div class="card-info">
+                <h3 class="product-name">Premium aromatic coffee</h3>
+                <p class="product-price">$10</p>
+              </div>
+              <button class="product-add-btn">Add +</button>
+            </div>
+          </div>
+          <div class="product-card">
+            <img class="product-img" src="/src/images/decaf-coffee.jpg" alt="Image by Xvect intern on Freepik" width="300" height="200">
+            <div class="product-card-info">
+              <div class="card-info">
+                <h3 class="product-name">Decaf coffee</h3>
+                <p class="product-price">$10</p>
+              </div>
+              <button class="product-add-btn">Add +</button>
+            </div>
+          </div>
+          <div class="product-card">
+            <img class="product-img" src="/src/images/balanced-coffee.jpg" alt="Image by xvector on Freepik" width="300" height="200">
+            <div class="product-card-info">
+              <div class="card-info">
+                <h3 class="product-name">Balanced coffee</h3>
+                <p class="product-price">$10</p>
+              </div>
+              <button class="product-add-btn">Add +</button>
+            </div>
+          </div>
+          <div class="product-card">
+            <img class="product-img" src="/src/images/coffee-explosion.jpg" alt="Image by pmvchamara on Freepik" width="300" height="200">
+            <div class="product-card-info">
+              <div class="card-info">
+                <h3 class="product-name">Export Coffee</h3>
+                <p class="product-price">$10</p>
+              </div>
+              <button class="product-add-btn">Add +</button>
+            </div>
+          </div>
+          <div class="product-card">
+            <img class="product-img" src="/src/images/colombian-coffee.jpg" alt="Image by Xvect intern on Freepik" width="300" height="200">
+            <div class="product-card-info">
+              <div class="card-info">
+                <h3 class="product-name">Colombian coffee</h3>
+                <p class="product-price">$10</p>
+              </div>
+              <button class="product-add-btn">Add +</button>
+            </div>
+          </div>
+          <div class="product-card">
+            <img class="product-img" src="/src/images/women-coffee-growers.jpg" alt="Image by originalmockup on Freepik" width="300" height="200">
+            <div class="product-card-info">
+              <div class="card-info">
+                <h3 class="product-name">Women coffee growers</h3>
+                <p class="product-price">$10</p>
+              </div>
+              <button class="product-add-btn">Add +</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="about">
+      <div class="about-container">
+        <h2 class="primary-text">Coffee & Cheers</h2>
+        <p class="secundary-text about-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium cumque dolor veniam sit laboriosam. Illum numquam in placeat nisi expedita maxime culpa exercitationem rem quaerat veritatis temporibus, dolorum obcaecati. Blanditiis.</p>
+        <button class="about-more-btn"> >> know more about us</button>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="footer-container">
+      <div class="footer-products">
+        <p class="footer-text">PRODUCTS</p>
+        <div class="footer-products-list">
+          <ul>
+            <li class="footer-text-info">Premium aromatic coffee</li>
+            <li class="footer-text-info">Colombian coffee</li>
+            <li class="footer-text-info">Women coffee growers</li>
+          </ul>
+          <ul>
+            <li class="footer-text-info">Decaf coffee</li>
+            <li class="footer-text-info">Balanced coffee</li>
+            <li class="footer-text-info">Export Coffee</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-contact-info">
+        <p class="footer-text">CONTACT INFO</p>
+       <div>
+        <p class="footer-text-info">+57 584562</p>
+        <p class="footer-text-info">info@coffeeandcheers.com</p>
+       </div>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
