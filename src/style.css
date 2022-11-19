@@ -309,6 +309,88 @@ footer {
   font-size: 1.2rem;
 }
 
+/* shop-cart modal */
+
+.cart-modal {
+  display: none;
+  width: 360px;
+  border-radius: 16px;
+  box-shadow: 3px 3px 10px;
+  position: absolute;
+  top: 78px;
+  right: 9px;
+  background-color: var(--white);
+  flex-direction: column;
+}
+
+/* .show {
+  display: flex;
+} */
+
+.cart-modal-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  padding: 1em;
+}
+
+.cart-modal-details {
+  width: 100%;
+  display: flex;
+}
+
+.cart-modal-tittle {
+  font-size: 1em;
+  font-weight: 700;
+  color: var(--dark-brown);
+}
+
+#table-body,
+tr {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+tbody {
+  flex-direction: column;
+  height: 280px;
+  overflow-y: scroll;
+  margin-bottom: 10px;
+}
+
+td{
+  padding: 5px;
+}
+
+.cart-img {
+  border-radius: 50%;
+}
+
+.cart-description {
+  width: 80px;
+}
+
+.cart-modal-button {
+  /* width: 350px; */
+  padding: 0.5em;
+  border: 1px solid var(--dark-aquamaine);
+  border-radius: 8px;
+  background-color: var(--dark-aquamaine);
+  color: var(--white);
+  font-size: 1em;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.cart-modal-button:hover {
+  background-color: var(--white);
+  color: var(--dark-aquamaine);
+}
+
 @media screen and (min-width: 768px) {
   header {
     width: 90%;
