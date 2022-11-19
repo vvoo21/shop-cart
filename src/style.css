@@ -310,7 +310,6 @@ footer {
 }
 
 @media screen and (min-width: 768px) {
-
   header {
     width: 90%;
     height: 120px;
@@ -344,7 +343,7 @@ footer {
   .home1,
   .products-container,
   .about-container,
-   .footer-container{
+  .footer-container {
     width: 90%;
     margin: auto;
   }
@@ -357,17 +356,17 @@ footer {
   .home1-video {
     width: 50%;
   }
-  
+
   .home1-content {
     width: 50%;
     align-items: center;
   }
-  
+
   .primary-text {
     text-align: center;
     font-size: 2.5em;
   }
-  
+
   .secundary-text {
     font-size: 1.4em;
   }
@@ -388,11 +387,11 @@ footer {
   .product-name {
     font-size: 1.3em;
   }
-  
+
   .product-price {
     font-size: 1.1em;
   }
-  
+
   .product-add-btn {
     font-size: 1em;
   }
@@ -403,21 +402,19 @@ footer {
     align-items: center;
   }
 
-  .about-container{
+  .about-container {
     width: 60%;
   }
 
   footer {
     padding: 2em 7em;
   }
-  
+
   .footer-text {
     font-size: 1.1em;
   }
-  
-  .footer-text-info {   
-    font-size: 0.9em;   
-  }
-  
 
+  .footer-text-info {
+    font-size: 0.9em;
+  }
 }
