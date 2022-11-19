@@ -5,7 +5,7 @@
   --light-aquamarine: #adcccc;
   --dark-aquamaine: #3e7b7b;
   --pink: hsl(0, 76%, 62%);
-  --dark-grayish-blue: hsl(216, 13%, 41%);
+  --dark-grayish-blue: hsl(220, 14%, 75%);
   --light: hsl(30, 14%, 92%);
   --white: hsl(0, 0%, 100%);
   --black: hsl(0, 0%, 0%);
@@ -33,6 +33,10 @@ header {
   padding: 1.5em;
 }
 
+.navbar__menu {
+  display: none;
+}
+
 .navbar {
   width: 100%;
   display: flex;
@@ -43,6 +47,7 @@ header {
 .navbar-logo {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .navbar-logo-text,
@@ -68,10 +73,13 @@ section {
   width: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .home1-video {
   width: 100%;
+  height: auto;
   border-radius: 16px;
 }
 
@@ -301,6 +309,115 @@ footer {
   font-size: 1.2rem;
 }
 
-/* @media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
 
-} */
+  header {
+    width: 90%;
+    height: 120px;
+    margin: auto;
+    border-bottom: 1px solid var(--dark-grayish-blue);
+  }
+
+  .navbar-iconMenu {
+    display: none;
+  }
+
+  .navbar__menu {
+    display: flex;
+    gap: 1em;
+  }
+
+  .navbar__link {
+    color: var(--dark-brown);
+    font-weight: 700;
+  }
+
+  .navbar-logo {
+    width: 37%;
+    justify-content: flex-start;
+  }
+
+  .navbar-logo-text {
+    font-size: 1.5em;
+  }
+
+  .home1,
+  .products-container,
+  .about-container,
+   .footer-container{
+    width: 90%;
+    margin: auto;
+  }
+
+  .home1-container {
+    flex-direction: row;
+    gap: 1em;
+  }
+
+  .home1-video {
+    width: 50%;
+  }
+  
+  .home1-content {
+    width: 50%;
+    align-items: center;
+  }
+  
+  .primary-text {
+    text-align: center;
+    font-size: 2.5em;
+  }
+  
+  .secundary-text {
+    font-size: 1.4em;
+  }
+
+  .products-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .product-card {
+    width: 100%;
+  }
+
+  .product-img {
+    width: 90%;
+  }
+
+  .product-name {
+    font-size: 1.3em;
+  }
+  
+  .product-price {
+    font-size: 1.1em;
+  }
+  
+  .product-add-btn {
+    font-size: 1em;
+  }
+
+  .about {
+    display: flex;
+    height: 500px;
+    align-items: center;
+  }
+
+  .about-container{
+    width: 60%;
+  }
+
+  footer {
+    padding: 2em 7em;
+  }
+  
+  .footer-text {
+    font-size: 1.1em;
+  }
+  
+  .footer-text-info {   
+    font-size: 0.9em;   
+  }
+  
+
+}
