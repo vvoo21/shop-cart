@@ -211,6 +211,7 @@ section {
 
 .product-add-btn:hover {
   background-color: var(--dark-aquamaine);
+  border: 1px solid var(--dark-aquamaine);
   color: var(--light);
 }
 
