@@ -312,7 +312,7 @@ footer {
 /* shop-cart modal */
 
 .cart-modal {
-  display: flex;
+  display: none;
   width: 360px;
   border-radius: 16px;
   box-shadow: 3px 3px 10px;
@@ -323,9 +323,9 @@ footer {
   flex-direction: column;
 }
 
-/* .show {
+.show {
   display: flex;
-} */
+}
 
 .cart-modal-container {
   width: 100%;

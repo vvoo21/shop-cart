@@ -1,4 +1,9 @@
+export const shopCartModal = document.querySelector('.cart-modal');
 export const shopCart = document.querySelector('.cart-modal-container');
 export const shopContainer = document.querySelector('#table-body');
 export const clearShopCart = document.querySelector('.cart-modal-button');
 export const productsList = document.querySelector('.products-container');
+export const openShopCart = document.querySelector('.shop-bag-icon');
+export const menuIcon = document.querySelector('.navbar-iconMenu');
+export const menuModal = document.querySelector('.modal-navbar-bg');
+export const menuClose = document.querySelector('.modal-navbar-close');
