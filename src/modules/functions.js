@@ -39,7 +39,7 @@ const createShopCart = () => {
     row.appendChild(qty);
 
     const deleteBtn = document.createElement('td');
-    deleteBtn.innerHTML = `<img class="cart-modal-delete" id="${id}" src="../images/icon-delete.svg" alt="delete icon">`;
+    deleteBtn.innerHTML = `<a class="cart-modal-delete" id="${id}" href="#">X</a>`;
     row.appendChild(deleteBtn);
   });
 };
@@ -75,6 +75,7 @@ const readProductData = (product) => { //
 };
 
 export const removeProduct = (e) => {
+  e.preventDefault();
   if (e.target.classList.contains('cart-modal-delete')) {
     // get the id of the clicked product
     const productId = e.target.getAttribute('id');

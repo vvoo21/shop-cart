@@ -376,6 +376,10 @@ td {
   width: 80px;
 }
 
+.cart-modal-delete {
+  color: var(--dark-grayish-blue);
+}
+
 .cart-modal-button {
   padding: 0.5em;
   border: 1px solid var(--dark-aquamaine);
