@@ -312,7 +312,7 @@ footer {
 /* shop-cart modal */
 
 .cart-modal {
-  display: none;
+  display: flex;
   width: 360px;
   border-radius: 16px;
   box-shadow: 3px 3px 10px;
@@ -354,9 +354,9 @@ tr {
   align-items: center;
 }
 
-tbody {
+#table-body {
   flex-direction: column;
-  height: 280px;
+  max-height: 300px;
   overflow-y: scroll;
   margin-bottom: 10px;
 }
@@ -367,6 +367,8 @@ td {
 
 .cart-img {
   border-radius: 50%;
+  width: 60px;
+  height: 60px;
 }
 
 .cart-description {
@@ -374,7 +376,6 @@ td {
 }
 
 .cart-modal-button {
-  /* width: 350px; */
   padding: 0.5em;
   border: 1px solid var(--dark-aquamaine);
   border-radius: 8px;
