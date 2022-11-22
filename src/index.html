@@ -13,16 +13,16 @@
       
       <ul class="navbar__menu">
         <li class="navbar__item">
-          <a href="#" class="navbar__link">Home</a>
+          <a href="#" class="navbar__link home-link">Home</a>
         </li>
         <li class="navbar__item">
-          <a href="#" class="navbar__link">About</a>
+          <a href="#" class="navbar__link products-link">Products</a>
         </li>
         <li class="navbar__item">
-          <a href="#" class="navbar__link">Products</a>
+          <a href="#" class="navbar__link about-link">About</a>
         </li>
         <li class="navbar__item">
-          <a href="#" class="navbar__link">Contact</a>
+          <a href="#" class="navbar__link contact-link">Contact</a>
         </li>
       </ul>
 
@@ -61,10 +61,10 @@
       <nav class="modal-navbar">
         <img class="modal-navbar-close" src="./images/icon-close-white.svg" alt="close icon">
         <ul class="modal-navbar-items">
-          <li><a class="modal-navbar-link" href="#">Home</a></li>
-          <li><a class="modal-navbar-link" href="#">Products</a></li>
-          <li><a class="modal-navbar-link" href="#">About</a></li>
-          <li><a class="modal-navbar-link" href="#">Contact</a></li>
+          <li><a class="modal-navbar-link" id="home" href="#">Home</a></li>
+          <li><a class="modal-navbar-link" id="products" href="#">Products</a></li>
+          <li><a class="modal-navbar-link" id="about" href="#">About</a></li>
+          <li><a class="modal-navbar-link" id="contact" href="#">Contact</a></li>
         </ul>
       </nav>        
     </div>
@@ -160,6 +160,20 @@
         <h2 class="primary-text">Coffee & Cheers</h2>
         <p class="secundary-text about-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium cumque dolor veniam sit laboriosam. Illum numquam in placeat nisi expedita maxime culpa exercitationem rem quaerat veritatis temporibus, dolorum obcaecati. Blanditiis.</p>
         <button class="about-more-btn"> >> know more about us</button>
+      </div>
+    </section>
+    <section class="contact-us">
+      <div class="contact-us-container">
+        <h2 class="primary-text contact-form-title">Contact us</h2>
+        <form action="https://formspree.io/f/xlevvvar" id="contact-form" method="post">
+          <label for="name">Your name</label>
+          <input type="text" name="name" class="contact-form-name" maxlength="30" aria-label="name" required>
+          <label for="email">Your email</label>
+          <input type="email" name="email" class="contact-form-email" aria-label="email" required>
+          <label for="message">Your message</label>
+          <textarea name="message" class="contact-form-message" rows="7" maxlength="500" aria-label="message" required></textarea>
+          <input class="contact-form-submit" type="submit" value="Send">
+        </form>
       </div>
     </section>
   </main>
