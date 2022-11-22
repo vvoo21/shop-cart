@@ -1,6 +1,10 @@
 import './style.css';
 import {
-  productsList, shopCart, openShopCart, shopCartModal, menuModal, menuIcon, menuClose, home, products, about, contact, homeLink, productsLink, aboutLink, contactLink, menuHome, menuProducts, menuAbout, menuContact, links} from './modules/variables.js';
+  productsList, shopCart, openShopCart, shopCartModal,
+  menuModal, menuIcon, menuClose, home, products, about,
+  contact, homeLink, productsLink, aboutLink, contactLink,
+  menuHome, menuProducts, menuAbout, menuContact, links,
+} from './modules/variables.js';
 import addProduct from './modules/addProduct.js';
 import { removeProduct } from './modules/functions.js';
 
@@ -25,13 +29,13 @@ menuClose.addEventListener('click', () => {
   menuModal.classList.remove('show');
 });
 
-links.forEach((link) => { 
+links.forEach((link) => {
   link.addEventListener('click', () => {
     menuModal.classList.remove('show');
   });
 });
 
-//navigate to the different sections
+// navigate to the different sections
 homeLink.addEventListener('click', () => {
   home.style.display = 'block';
   products.style.display = 'block';

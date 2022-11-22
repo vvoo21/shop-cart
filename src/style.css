@@ -280,7 +280,7 @@ section {
   font-size: 0.9em;
 }
 
-#contact-form input, 
+#contact-form input,
 #contact-form textarea {
   padding: 0.8em;
   border: 1px solid var(--dark-aquamaine);
@@ -494,7 +494,7 @@ td {
   .home1,
   .products-container,
   .about-container,
-  .footer-container{
+  .footer-container {
     width: 90%;
     margin: auto;
   }
@@ -560,7 +560,7 @@ td {
     width: 60%;
     margin: auto;
   }
-  
+
   .contact-form-title {
     font-size: 1.5em;
     font-weight: 700;
