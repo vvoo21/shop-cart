@@ -7,6 +7,9 @@ import {
 } from './modules/variables.js';
 import addProduct from './modules/addProduct.js';
 import { removeProduct } from './modules/functions.js';
+import validateForm, {
+  inputEmail, inputName, inputMessage, contactForm, sendContatcForm,
+} from './modules/contactForm.js';
 
 // add product to the cart
 productsList.addEventListener('click', addProduct);
@@ -85,3 +88,10 @@ menuContact.addEventListener('click', () => {
   about.style.display = 'none';
   contact.style.display = 'block';
 });
+
+// validate the form
+inputName.addEventListener('input', validateForm);
+inputEmail.addEventListener('input', validateForm);
+inputMessage.addEventListener('input', validateForm);
+
+contactForm.addEventListener('submit', sendContatcForm);

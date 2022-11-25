@@ -167,13 +167,23 @@
         <h2 class="primary-text contact-form-title">Contact us</h2>
         <form action="https://formspree.io/f/xlevvvar" id="contact-form" method="post">
           <label for="name">Your name</label>
-          <input type="text" name="name" class="contact-form-name" maxlength="30" aria-label="name" required>
+          <input type="text" name="name" class="contact-form-name" maxlength="30" aria-label="name">
           <label for="email">Your email</label>
-          <input type="email" name="email" class="contact-form-email" aria-label="email" required>
+          <input type="email" name="email" class="contact-form-email" aria-label="email">
           <label for="message">Your message</label>
-          <textarea name="message" class="contact-form-message" rows="7" maxlength="500" aria-label="message" required></textarea>
-          <input class="contact-form-submit" type="submit" value="Send">
+          <textarea name="message" class="contact-form-message" rows="7" maxlength="500" aria-label="message"></textarea>
+          <input class="contact-form-submit" type="submit" value="Send" disabled>
         </form>
+        <div class="spinner-container">
+          <div class="sk-chase">
+            <div class="sk-chase-dot"></div>
+            <div class="sk-chase-dot"></div>
+            <div class="sk-chase-dot"></div>
+            <div class="sk-chase-dot"></div>
+            <div class="sk-chase-dot"></div>
+            <div class="sk-chase-dot"></div>
+          </div>
+        </div>
       </div>
     </section>
   </main>
