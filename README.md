@@ -30,8 +30,6 @@ To get a local copy up and running follow these simple example steps.
 ### Install
 - Just run `npm i` on the root of the project and you're good to go. All of the necesary packages will be installed for you!
 
-### Usage
-
 ### Run tests
 - Run `npm run start` to se a live version of the project on your browser
 - Run `npx hint .` to get Webhint going, a linter for HTML

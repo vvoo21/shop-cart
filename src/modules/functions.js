@@ -2,6 +2,10 @@ import { clearShopCart, shopContainer } from './variables.js';
 
 let products = [];
 
+const syncStorage = () => {
+  localStorage.setItem('products', JSON.stringify(products));
+};
+
 const createShopCart = () => {
   // clean HTML shopContainer.innerHTML = ""; or
   while (shopContainer.firstChild) {
@@ -42,7 +46,16 @@ const createShopCart = () => {
     deleteBtn.innerHTML = `<a class="cart-modal-delete" id="${id}" href="#">X</a>`;
     row.appendChild(deleteBtn);
   });
+
+  syncStorage();
 };
+
+// show local storage products in the DOM when the page is loaded
+document.addEventListener('DOMContentLoaded', () => {
+  products = JSON.parse(localStorage.getItem('products')) || [];
+
+  createShopCart();
+});
 
 const readProductData = (product) => { //
   const productInfo = {
@@ -92,6 +105,7 @@ clearShopCart.addEventListener('click', () => {
   while (shopContainer.firstChild) {
     shopContainer.removeChild(shopContainer.firstChild);
   }
+  syncStorage();
 });
 
 export default readProductData;
